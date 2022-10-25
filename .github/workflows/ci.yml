@@ -6,7 +6,6 @@ on:
     branches:
       - "main"
 env:  
-  MY_REPO: https://certyfreak:${{secrets.GITHUB_TOKEN}}@github.com/certyfreak/ci-cd.git
 
   MY_BRANCH: main
 
@@ -25,7 +24,7 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
           fetch-depth: 0
       - name: Deploy to production => Merge master -> production
-        uses: trigger.yml
+        uses: https://certyfreak:${{secrets.GITHUB_TOKEN}}@github.com/certyfreak/ci-cd/.github/workflows/trigger.yml
         with:
           from_branch: master
           to_branch: production
