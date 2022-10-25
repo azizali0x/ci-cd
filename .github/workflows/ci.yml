@@ -24,11 +24,11 @@ jobs:
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           fetch-depth: 0
-      - run: |
-          git fetch origin production
-          git checkout production
-          git merge main
-          git push -f 
+      - name: Deploy to production => Merge master -> production
+        uses: certyfreak/ci-cd/.github/workflows/trigger.yml@main
+        with:
+          from_branch: master
+          to_branch: production
 
 
 
