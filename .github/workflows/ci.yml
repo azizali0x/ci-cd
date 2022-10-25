@@ -28,7 +28,7 @@ jobs:
           git branch
           git branch -a
           git checkout remotes/origin/production
-          git merge origin main
+          git merge  main
           git status
           git show
           git push
