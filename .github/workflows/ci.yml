@@ -26,4 +26,5 @@ jobs:
       - run: |
           ls
           git branch -a
+          git checkout remotes/origin/production
           git branch
