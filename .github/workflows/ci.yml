@@ -27,6 +27,11 @@ jobs:
       - run: |
           git branch
           git branch -a
+          git checkout origin remotes/origin/production
+          git merge origin main
+          git status
+          git show
+          git push
 
 
 
