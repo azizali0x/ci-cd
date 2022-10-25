@@ -24,10 +24,10 @@ jobs:
         with:
           token: ${{secrets.GITHUB_TOKEN}}
       - run: |     
-          git clone ${{env.MY_REPO}} -b ${{env.MASTER_BRANCH}} tmp
-          cd tmp
           git config user.name "Abdul Aziz"
           git config user.email "certifiedfreak2001@gmail.com"
+          git fetch production
+          git fetch main
           git checkout production
           git merge main
-          git push
+          git push origin production
