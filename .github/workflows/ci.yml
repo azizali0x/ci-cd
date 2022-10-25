@@ -27,6 +27,7 @@ jobs:
       - run: |
           git branch
           git branch -a
+          git rebase HEAD remotes/origin/production
           git checkout remotes/origin/production
           git merge  main
           git status
