@@ -26,3 +26,5 @@ jobs:
       - run: |
           ls
           git branch
+          git checkout production
+          git branch
