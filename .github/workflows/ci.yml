@@ -1,7 +1,7 @@
 name: Trigger to production
 on:
   push:
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   deploy:
