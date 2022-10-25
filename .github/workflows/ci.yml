@@ -29,8 +29,6 @@ jobs:
         with:
           from_branch: master
           to_branch: production
-      - name: verify
-
 
 
 
