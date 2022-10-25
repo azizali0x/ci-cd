@@ -28,6 +28,6 @@ jobs:
           cd tmp
           git config user.name "Abdul Aziz"
           git config user.email "certifiedfreak2001@gmail.com"
-          git checkout main
-          git merge production
+          git checkout production
+          git merge main
           git push
