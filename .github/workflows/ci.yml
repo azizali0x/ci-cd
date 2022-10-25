@@ -26,8 +26,8 @@ jobs:
           fetch-depth: 0
       - run: |
           git fetch origin production
-          git branch
-          git rebase HEAD production
+          git checkout production
+          git merge main
           git push -f 
 
 
