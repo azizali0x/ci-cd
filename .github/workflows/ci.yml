@@ -23,11 +23,5 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-      - run: |     
-          git config user.name "Abdul Aziz"
-          git config user.email "certifiedfreak2001@gmail.com"
-          git fetch production
-          git fetch main
-          git checkout production
-          git merge main
-          git push origin production
+      - run: |
+          ls
