@@ -26,6 +26,7 @@ jobs:
           fetch-depth: 0
       - run: |
           ls
+          git branch
           git checkout origin remotes/origin/production
           git merge origin remotes/origin/main
           git status
