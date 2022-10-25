@@ -20,9 +20,6 @@ jobs:
 
     steps:
       - name: Deploy to production
-        uses: actions/checkout@v3
-        with:
-          token: ${{secrets.GITHUB_TOKEN}}
       - run: |     
           git clone ${{env.MY_REPO}} -b ${{env.MY_BRANCH}} tmp
           cd tmp
