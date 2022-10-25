@@ -25,12 +25,11 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
           fetch-depth: 0
       - run: |
+          git fetch origin production
           git branch
-          git branch -a
-          git rebase HEAD remotes/origin/production
-          git status
-          git show
-          git push --force origin remotes/origin/production
+          git checkout production
+          git merge main
+          git push -f 
 
 
 
