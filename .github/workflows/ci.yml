@@ -27,8 +27,7 @@ jobs:
       - run: |
           git fetch origin production
           git branch
-          git checkout production
-          git merge main
+          git rebase HEAD production
           git push -f 
 
 
