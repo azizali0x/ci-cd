@@ -25,7 +25,7 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
           fetch-depth: 0
       - name: Deploy to production => Merge master -> production
-        uses: ./trigger.yml
+        uses: certyfreak/ci-cd/.github/workflows/trigger.yml@main
         with:
           from_branch: master
           to_branch: production
