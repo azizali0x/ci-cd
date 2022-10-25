@@ -31,7 +31,7 @@ jobs:
           git merge  main
           git status
           git show
-          git push
+          git push origin remotes/origin/production
 
 
 
