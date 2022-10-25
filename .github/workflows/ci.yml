@@ -26,7 +26,10 @@ jobs:
           fetch-depth: 0
       - run: |
           ls
-          git branch -a
-          git branch
+          git checkout remotes/origin/production
+          git merge remotes/origin/main
+          git push
+
+
           
     
