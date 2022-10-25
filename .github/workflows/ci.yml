@@ -25,6 +25,5 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
       - run: |
           ls
-          git branch
-          git checkout origin/production
+          git branch -a
           git branch
