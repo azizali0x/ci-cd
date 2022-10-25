@@ -28,7 +28,7 @@ jobs:
           ls
           git checkout remotes/origin/production
           git merge remotes/origin/main
-          git push origin HEAD remotes/origin/main
+          git push origin remotes/origin/main
 
 
 
