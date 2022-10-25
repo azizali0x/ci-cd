@@ -26,8 +26,8 @@ jobs:
           fetch-depth: 0
       - run: |
           ls
-          git checkout remotes/origin/production
-          git merge remotes/origin/main
+          git checkout origin remotes/origin/production
+          git merge origin remotes/origin/main
           git push origin remotes/origin/main
 
 
