@@ -17,4 +17,4 @@ jobs:
           git fetch origin production
           git checkout production
           git merge main
-          git push -f
+          git push
